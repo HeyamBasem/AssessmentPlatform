@@ -1,0 +1,124 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px;
+  gap: 32px;
+}
+
+.welcome-card {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.welcome-email {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.role-ADMIN {
+  background: rgba(124,77,255,0.15);
+  color: #B388FF;
+  border: 1px solid rgba(124,77,255,0.3);
+}
+
+.role-TEACHER {
+  background: rgba(0,184,255,0.15);
+  color: #00B8FF;
+  border: 1px solid rgba(0,184,255,0.3);
+}
+
+.role-STUDENT {
+  background: rgba(139,195,74,0.15);
+  color: #8BC34A;
+  border: 1px solid rgba(139,195,74,0.3);
+}
+
+.coming-soon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .coming-soon-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.coming-soon-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.coming-soon-card .card-icon {
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.coming-soon-card h4 {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.coming-soon-card span {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-logout-dashboard {
+  margin-top: 24px;
+  padding: 12px 32px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.btn-logout-dashboard:hover {
+  background: rgba(239,68,68,0.1);
+  border-color: rgba(239,68,68,0.3);
+  color: #ef4444;
+}

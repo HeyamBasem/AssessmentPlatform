@@ -1,0 +1,100 @@
+.register-card {
+  max-width: 480px;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 0;
+}
+
+.auth-success-banner {
+  background: rgba(139,195,74,0.08);
+  border: 1px solid rgba(139,195,74,0.2);
+  color: var(--success);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.password-strength {
+  margin-top: 8px;
+}
+
+.strength-bar {
+  height: 4px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.strength-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.strength-1, .strength-2 { background: var(--error); }
+.strength-3 { background: #F59E0B; } /* Warning */
+.strength-4 { background: #00E5FF; } /* Highlight */
+.strength-5 { background: var(--success); }
+
+.password-reqs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.password-reqs span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+  transition: color 0.3s;
+}
+
+.password-reqs span.req-met {
+  color: var(--success);
+}
+
+.password-reqs span.req-met svg {
+  color: var(--success);
+}
+
+.password-reqs span svg {
+  width: 14px;
+  height: 14px;
+}
+
+select {
+  appearance: none;
+  padding-right: 40px !important;
+  background-image: none;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
