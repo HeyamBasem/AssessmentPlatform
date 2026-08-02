@@ -1,20 +1,12 @@
-<<<<<<< Updated upstream
 import React from "react";
 import { LayoutDashboard, LogOut, Shield, BookOpen, Users } from "lucide-react";
 import { AuthContext } from "../auth/AuthContext";
 import "./Dashboard.css";
-=======
-import React from 'react';
-import { LayoutDashboard, LogOut, Shield, BookOpen, Users } from 'lucide-react';
-import { AuthContext } from '../auth/AuthContext';
-import './Dashboard.css';
->>>>>>> Stashed changes
 
 const Dashboard = () => {
   const { user, logout } = React.useContext(AuthContext);
 
   const getRoleIcon = () => {
-<<<<<<< Updated upstream
     switch (user?.role) {
       case "ADMIN":
         return <Shield size={16} />;
@@ -24,13 +16,6 @@ const Dashboard = () => {
         return <Users size={16} />;
       default:
         return <Users size={16} />;
-=======
-    switch(user?.role) {
-      case 'ADMIN': return <Shield size={16} />;
-      case 'TEACHER': return <BookOpen size={16} />;
-      case 'STUDENT': return <Users size={16} />;
-      default: return <Users size={16} />;
->>>>>>> Stashed changes
     }
   };
 
@@ -39,10 +24,10 @@ const Dashboard = () => {
       <div className="welcome-card">
         <h1 className="welcome-title">Welcome back, {user?.firstName}</h1>
         <p className="welcome-email">{user?.email}</p>
-        
-        <div className={`role-badge role-${user?.role || 'STUDENT'}`}>
+
+        <div className={`role-badge role-${user?.role || "STUDENT"}`}>
           {getRoleIcon()}
-          {user?.role || 'STUDENT'}
+          {user?.role || "STUDENT"}
         </div>
 
         <button className="btn-logout-dashboard" onClick={logout}>
