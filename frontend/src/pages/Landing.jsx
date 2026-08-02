@@ -19,7 +19,7 @@ const Landing = () => {
       <section className="hero">
         <div className="hero-badge">
           <Sparkles size={14} />
-          <span>Assessment Platform</span>
+          <span>AI-Powered Assessment Platform</span>
         </div>
         <h1 className="hero-title">
           Empowering Education
@@ -27,9 +27,9 @@ const Landing = () => {
           <span className="gradient-text">Through Smart Assessment</span>
         </h1>
         <p className="hero-subtitle">
-          Streamline your institution's assessment lifecycle from district
-          management to student evaluation with our intelligent, role based exam
-          platform.
+          Streamline your institution's assessment lifecycle — from district
+          management to student evaluation — with our intelligent, role-based
+          exam platform.
         </p>
         <div className="hero-actions">
           <Link
